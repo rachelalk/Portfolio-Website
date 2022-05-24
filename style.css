@@ -1,0 +1,107 @@
+/* || Reset CSS styling */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* || Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+
+/* || Set root styling */
+:root {
+	--navbar-background: #320e3b;
+	--navbar-text: #fdf0d5;
+	--contactbar-background: #546a76;
+	--main-text: black;
+	--headings: #e36588;
+	--text-font: "Imprima", sans-serif;
+}
+
+body {
+	font-family: var(--main-text);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* || Top Nav Bar */
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--navbar-background);
+	width: 100vw;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+}
+
+#soc-logo {
+	height: 50px;
+	width: auto;
+}
+
+.nav-left,
+.nav-right {
+	display: flex;
+	flex-direction: row;
+	color: var(--navbar-text);
+	justify-content: center;
+	align-items: center;
+	font-family: var(--text-font);
+	gap: 15px;
+}
+
+#contact {
+	margin-right: 10px;
+}
+
+/* || Bottom contact bar */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--contactbar-background);
+	width: 100vw;
+	height: 70px;
+	position: fixed;
+	bottom: 0;
+	justify-content: space-between;
+}
+
+.bottom-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* margin-right: 0;
+	margin-left: 60vw; */
+}
+
+#email-icon {
+	height: 40px;
+	width: auto;
+}
+
+#twitter-icon {
+	height: 50px;
+	width: auto;
+	padding-left: 12px;
+}
+
+#github-icon {
+	height: 70px;
+	width: auto;
+	padding: -10px;
+}
+
+#linkedin-icon {
+	height: 55px;
+	width: auto;
+}

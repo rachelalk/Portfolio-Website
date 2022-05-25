@@ -5,9 +5,6 @@
 	padding: 0;
 }
 
-/* || Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
-
 /* || Set root styling */
 :root {
 	--navbar-background: #320e3b;
@@ -16,14 +13,75 @@
 	--main-text: black;
 	--headings: #e36588;
 	--text-font: "Imprima", sans-serif;
+	--border-color: #e36588;
 }
 
 body {
-	font-family: var(--main-text);
+	font-family: var(--text-font);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	color: var(--main-text);
 }
+
+/* || Landing page main elements formatting */
+
+.heading {
+	padding-top: 40px;
+	font-size: 60px;
+	font-weight: normal;
+	color: var(--headings);
+	font-family: var(--text-font);
+}
+
+.landingInfo {
+	display: flex;
+	width: 100vw;
+	height: 90vh;
+	flex-direction: column;
+	margin-top: 80px;
+	align-items: center;
+	gap: 30px;
+}
+
+.rachel-pic {
+	padding-top: 10px;
+}
+
+#rachel-pic {
+	max-height: 10vw;
+	width: auto;
+	border-radius: 3px;
+	border: solid;
+	border-color: var(--border-color);
+	border-radius: 50%;
+}
+
+#landingP {
+	width: 30vw;
+	text-align: center;
+}
+
+.techstack {
+	display: flex;
+	flex-direction: row;
+}
+
+#htmlcssjs {
+	height: 80px;
+}
+
+#nodejs {
+	height: 80px;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+#sql {
+	height: 80px;
+}
+
+/* || End of landing page main elements formatting */
 
 /* || Top Nav Bar */
 .top-nav {
@@ -102,8 +160,6 @@ body {
 	align-items: center;
 	align-items: center;
 	flex-wrap: nowrap;
-	/* margin-right: 0;
-	margin-left: 60vw; */
 }
 
 #email-container #email-icon {

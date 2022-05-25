@@ -80,28 +80,34 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	align-items: center;
+	flex-wrap: nowrap;
 	/* margin-right: 0;
 	margin-left: 60vw; */
 }
 
-#email-icon {
-	height: 40px;
+#email-container #email-icon {
+	display: flex;
+	max-height: 40px;
 	width: auto;
 }
 
-#twitter-icon {
+#twitter-container #twitter-icon {
+	display: flex;
 	height: 50px;
 	width: auto;
-	padding-left: 12px;
+	padding-left: 15px;
 }
 
-#github-icon {
+#github-container #github-icon {
+	display: flex;
 	height: 70px;
 	width: auto;
 	padding: -10px;
 }
 
-#linkedin-icon {
+#linkedin-container #linkedin-icon {
+	display: flex;
 	height: 55px;
 	width: auto;
 }

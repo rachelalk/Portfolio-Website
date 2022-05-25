@@ -52,8 +52,28 @@ body {
 	gap: 15px;
 }
 
+.nav-right a:link {
+	color: var(--navbar-text);
+	text-decoration: none;
+}
+
+.nav-right a:visited {
+	color: var(--navbar-text);
+	text-decoration: none;
+}
+
 #contact {
 	margin-right: 10px;
+}
+
+.nav-left a:link {
+	color: var(--navbar-text);
+	text-decoration: none;
+}
+
+.nav-left a:visited {
+	color: var(--navbar-text);
+	text-decoration: none;
 }
 
 /* || Bottom contact bar */
